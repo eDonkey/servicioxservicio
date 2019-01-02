@@ -15,7 +15,7 @@ include("config/mysql_adapter.php");
               appId      : '<?php echo $fbappid; ?>',
               cookie     : true,
               xfbml      : true,
-              version    : '{api-version}'
+              version    : '3.2'
             });
 
             FB.AppEvents.logPageView();   
