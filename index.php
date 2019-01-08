@@ -81,7 +81,8 @@
   }
     function showDiv() {
     div = document.getElementById('email-login');
-    div.style.display = "";
+    div.visibility: visible;
+    div.opacity: 1;
 }
 </script>
 
@@ -99,13 +100,13 @@
     ----- O -----
     Ingresar usando email<br />
         <form method="post" action="" autocomplete="email">
-            EMAIL <input type="text" onclick="showDiv();" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required /><br />
-            <div id="email-login" style="display:none;border:1px solid red">
-            CONTRASEÑA <input type="password" id="password" name="password" required placeholder="ejemplo@tumail.com" />
-            <input type="submit" name="Ingresar" /><br />
-            <h5><a href="">Recuperar contraseña</a></h5>
+            EMAIL <input type="text" onclick="showDiv()" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required /><br />
+            <div id="email-login" style="  visibility: hidden;opacity: 0;transition: visibility 0s, opacity 0.5s linear;">
+                CONTRASEÑA <input type="password" id="password" name="password" required placeholder="ejemplo@tumail.com" /><br />
+                <input type="submit" name="Ingresar" /><br />
+                <h5><a href="">Recuperar contraseña</a></h5>
+            </div>
         </form>
-    </div>
 
 </body>
 </html>
