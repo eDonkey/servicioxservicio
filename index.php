@@ -3,13 +3,16 @@
 <head>
 <title>Facebook Login JavaScript Example</title>
 <meta charset="UTF-8">
-    <script type="text/css">
-        input[type=text] {
-            border: 1px dotted #999;
-            border-radius: 0;
-            -webkit-appearance: none;
-        }
-    </script>
+    <style type="text/css">
+input, textarea, select, button {
+  width : 150px;
+  margin: 0;
+
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+          box-sizing: border-box;
+}
+    </style>
 </head>
 <body>
 <script>
