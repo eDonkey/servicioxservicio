@@ -81,8 +81,8 @@
   }
     function showDiv() {
     div = document.getElementById('email-login');
-    div.visibility: visible;
-    div.opacity: 1;
+    div.style.visibility = visible;
+    div.style.opacity = 1;
 }
 </script>
 
