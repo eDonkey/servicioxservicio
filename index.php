@@ -91,13 +91,13 @@
   the JavaScript SDK to present a graphical Login button that triggers
   the FB.login() function when clicked.
 -->
-<div id"logincontainer" style="position:fixed;top: 50%;left: 50%;width:30em;height:18em;margin-top: -9em;margin-left: -15em;border: 1px solid #ccc;background-color: #f3f3f3">
+<div id"logincontainer" align="center" style="position:fixed;top: 50%;left: 50%;width:30em;height:18em;margin-top: -9em;margin-left: -15em;border: 1px solid #ccc;background-color: #f3f3f3">
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
 
 <div id="status">
 </div>
-    ----- O -----
+    ----- O -----<br />
     Ingresar usando email<br />
         <form method="post" action="" autocomplete="email">
             EMAIL <input type="text" onclick="showDiv()" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required /><br />
