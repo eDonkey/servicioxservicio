@@ -79,6 +79,10 @@
         'Thanks for logging in, ' + response.name + '!';
     });
   }
+    function showDiv() {
+    div = document.getElementById('email-login');
+    div.style.display = "";
+}
 </script>
 
 <!--
@@ -92,6 +96,16 @@
 
 <div id="status">
 </div>
+    ----- O -----
+    Ingresar usando email<br />
+        <form method="post" action="" autocomplete="email">
+            EMAIL <input type="text" onclick="showDiv();" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required /><br />
+            <div id="email-login" style="display:none;border:1px solid red">
+            CONTRASEÑA <input type="password" id="password" name="password" required placeholder="ejemplo@tumail.com" />
+            <input type="submit" name="Ingresar" /><br />
+            <h5><a href="">Recuperar contraseña</a></h5>
+        </form>
+    </div>
 
 </body>
 </html>
