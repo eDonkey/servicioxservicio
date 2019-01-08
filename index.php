@@ -100,9 +100,9 @@
     ----- O -----<br />
     Ingresar usando email<br />
         <form method="post" action="" autocomplete="email">
-            EMAIL <input type="text" onclick="showDiv()" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required /><br />
+            EMAIL <input type="text" onclick="showDiv()" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="ejemplo@tumail.com" required /><br />
             <div id="email-login" style="  visibility: hidden;opacity: 0;transition: visibility 0s, opacity 0.5s linear;">
-                CONTRASEÑA <input type="password" id="password" name="password" required placeholder="ejemplo@tumail.com" /><br />
+                CONTRASEÑA <input type="password" id="password" name="password" required /><br />
                 <input type="submit" name="Ingresar" /><br />
                 <h5><a href="">Recuperar contraseña</a></h5>
             </div>
