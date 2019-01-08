@@ -3,6 +3,13 @@
 <head>
 <title>Facebook Login JavaScript Example</title>
 <meta charset="UTF-8">
+    <script type="text/css">
+        input[type=text] {
+            border: 1px dotted #999;
+            border-radius: 0;
+            -webkit-appearance: none;
+        }
+    </script>
 </head>
 <body>
 <script>
