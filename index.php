@@ -91,7 +91,7 @@
   the JavaScript SDK to present a graphical Login button that triggers
   the FB.login() function when clicked.
 -->
-
+<div id"logincontainer" style="position:fixed;top: 50%;left: 50%;width:30em;height:18em;margin-top: -9em;margin-left: -15em;border: 1px solid #ccc;background-color: #f3f3f3">
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
 
@@ -107,6 +107,6 @@
                 <h5><a href="">Recuperar contraseña</a></h5>
             </div>
         </form>
-
+</div>
 </body>
 </html>
