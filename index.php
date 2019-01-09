@@ -41,5 +41,6 @@ include("config/fbconfig.php");
                     </form>
                 </div>
             </div>
+         <input id="btn" type="button" value="Login" onclick="hideDiv('searchcontaine'r); sleep(2); showDiv('logincontainer');"/>
     </body>
 </html>
