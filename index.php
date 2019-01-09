@@ -6,39 +6,7 @@ include("config/fbconfig.php");
     <head>
         <title>Facebook Login JavaScript Example</title>
         <meta charset="UTF-8">
-        <style type="text/css">
-            body {
-                background-color: #f1d849;
-            }
-            .searchfield {
-                font-family: "Montserrat", sans-serif;
-                width: 30em;
-                height: 4em;
-                border: 0.1em solid #ccc;
-                border-radius: 0.5em;
-                background-color: #efefef;
-                padding: 0em 1em;
-                font-size: 1.2em;
-                box-shadow: 0em 0.1em 0.5em #ccc;
-            }
-            .searchbutton {
-                padding: 1px 2px 1px !important;
-                font-size: 12px !important;
-                background-color: #1B349F;
-                font-weight: bold;
-                text-shadow: 1px 1px #1B349F;
-                color: #ffffff;
-                border-radius: 100px;
-                -moz-border-radius: 100px;
-                -webkit-border-radius: 100px;
-                border: 1px solid #1B349F;
-                cursor: pointer;
-                box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-                -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-                -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-                width:80px;
-            }
-        </style>
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
         <script>
