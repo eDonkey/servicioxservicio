@@ -1,3 +1,6 @@
+<?php
+include("config/fbconfig.php");
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -77,9 +80,11 @@
         </div>
         <div id"logincontainer" style="position:fixed;top: 50%;left: 50%;width:30em;height:12em;margin-top: -9em;margin-left: -15em;border: 1px solid #ccc;background-color: #f3f3f3;visibility:hidden;">
             <div align="center" style="position:fixed;top: 33%;left: 41%;">
+<?php if ($fbstatus == true) { ?>
                 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
                 <div id="status"></div>
                 ----- O -----<br />
+                <?php } ?>
                 Ingresar usando email<br />
                     <form method="post" action="" autocomplete="email">
                         EMAIL <input type="text" onclick="showDiv('email-login')" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="ejemplo@tumail.com" required /><br />
