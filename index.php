@@ -61,8 +61,8 @@
         'Thanks for logging in, ' + response.name + '!';
     });
   }
-    function showDiv() {
-    div = document.getElementById('email-login');
+    function showDiv(divid) {
+    div = document.getElementById(divid);
     div.style.visibility = "visible";
     div.style.opacity = 1;
 }
@@ -77,7 +77,7 @@
                 ----- O -----<br />
                 Ingresar usando email<br />
                     <form method="post" action="" autocomplete="email">
-                        EMAIL <input type="text" onclick="showDiv()" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="ejemplo@tumail.com" required /><br />
+                        EMAIL <input type="text" onclick="showDiv('email-login')" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="ejemplo@tumail.com" required /><br />
                             <div id="email-login" style="  visibility: hidden;opacity: 0;transition: visibility 0s, opacity 0.5s linear;">
                                 CONTRASEÑA <input type="password" id="password" name="password" required /><br />
                                 <input type="submit" name="Ingresar" value="INGRESAR" /><br />
