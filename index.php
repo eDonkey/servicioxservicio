@@ -1,48 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Facebook Login JavaScript Example</title>
-<meta charset="UTF-8">
-    <style type="text/css">
-input, textarea, select, button {
-  width : 150px;
-  margin: 0;
-
-  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
-     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
-          box-sizing: border-box;
-}
-    </style>
-</head>
-<body>
-<script>
-  // This is called with the results from from FB.getLoginStatus().
-  function statusChangeCallback(response) {
-    console.log('statusChangeCallback');
-    console.log(response);
-    // The response object is returned with a status field that lets the
-    // app know the current login status of the person.
-    // Full docs on the response object can be found in the documentation
-    // for FB.getLoginStatus().
-    if (response.status === 'connected') {
-      // Logged into your app and Facebook.
-      testAPI();
-    } else {
-      // The person is not logged into your app or we are unable to tell.
-      document.getElementById('status').innerHTML = 'Please log ' +
-        'into this app.';
-    }
+    <head>
+        <title>Facebook Login JavaScript Example</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            input, textarea, select, button {
+              width : 150px;
+              margin: 0;
+                -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+                -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            function statusChangeCallback(response) {
+                console.log('statusChangeCallback');
+                console.log(response);
+                if (response.status === 'connected') {
+                  testAPI();
+                } else {
+                  document.getElementById('status').innerHTML = 'Please log ' +
+                    'into this app.';
+                }
+            }
+              function checkLoginState() {
+                FB.getLoginStatus(function(response) {
+                  statusChangeCallback(response);
+                });
   }
-
-  // This function is called when someone finishes with the Login
-  // Button.  See the onlogin handler attached to it in the sample
-  // code below.
-  function checkLoginState() {
-    FB.getLoginStatus(function(response) {
-      statusChangeCallback(response);
-    });
-  }
-
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '1213490652138684',
@@ -51,26 +38,11 @@ input, textarea, select, button {
       xfbml      : true,  // parse social plugins on this page
       version    : 'v2.8' // use graph api version 2.8
     });
-
-    // Now that we've initialized the JavaScript SDK, we call 
-    // FB.getLoginStatus().  This function gets the state of the
-    // person visiting this page and can return one of three states to
-    // the callback you provide.  They can be:
-    //
-    // 1. Logged into your app ('connected')
-    // 2. Logged into Facebook, but not your app ('not_authorized')
-    // 3. Not logged into Facebook and can't tell if they are logged into
-    //    your app or not.
-    //
-    // These three cases are handled in the callback function.
-
     FB.getLoginStatus(function(response) {
       statusChangeCallback(response);
     });
 
   };
-
-  // Load the SDK asynchronously
   (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
@@ -78,9 +50,6 @@ input, textarea, select, button {
     js.src = "https://connect.facebook.net/en_US/sdk.js";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
-
-  // Here we run a very simple test of the Graph API after login is
-  // successful.  See statusChangeCallback() for when this call is made.
   function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
@@ -94,31 +63,22 @@ input, textarea, select, button {
     div.style.visibility = "visible";
     div.style.opacity = 1;
 }
-</script>
-
-<!--
-  Below we include the Login Button social plugin. This button uses
-  the JavaScript SDK to present a graphical Login button that triggers
-  the FB.login() function when clicked.
--->
-<div id"logincontainer" style="position:fixed;top: 50%;left: 50%;width:30em;height:12em;margin-top: -9em;margin-left: -15em;border: 1px solid #ccc;background-color: #f3f3f3">
-    <div align="center" style="position:fixed;top: 20%;left: 41%;">
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>
-
-<div id="status">
-</div>
-    ----- O -----<br />
-    Ingresar usando email<br />
-        <form method="post" action="" autocomplete="email">
-            EMAIL <input type="text" onclick="showDiv()" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="ejemplo@tumail.com" required /><br />
-            <div id="email-login" style="  visibility: hidden;opacity: 0;transition: visibility 0s, opacity 0.5s linear;">
-                CONTRASEÑA <input type="password" id="password" name="password" required /><br />
-                <input type="submit" name="Ingresar" /><br />
-                <h5><a href="">Recuperar contraseña</a></h5>
+        </script>
+        <div id"logincontainer" style="position:fixed;top: 50%;left: 50%;width:30em;height:12em;margin-top: -9em;margin-left: -15em;border: 1px solid #ccc;background-color: #f3f3f3">
+            <div align="center" style="position:fixed;top: 20%;left: 41%;">
+                <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+                <div id="status"></div>
+                ----- O -----<br />
+                Ingresar usando email<br />
+                    <form method="post" action="" autocomplete="email">
+                        EMAIL <input type="text" onclick="showDiv()" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="ejemplo@tumail.com" required /><br />
+                            <div id="email-login" style="  visibility: hidden;opacity: 0;transition: visibility 0s, opacity 0.5s linear;">
+                                CONTRASEÑA <input type="password" id="password" name="password" required /><br />
+                                <input type="submit" name="Ingresar" value="INGRESAR" /><br />
+                                <h5><a href="">Recuperar contraseña</a></h5>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </form>
-        </div>
-</div>
-</body>
+    </body>
 </html>
