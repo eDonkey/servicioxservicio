@@ -3,13 +3,13 @@ body {
 }
 .searchfield {
     font-family: "Montserrat", sans-serif;
-    width: 30em;
-    height: 4em;
+    width: 22em;
+    height: 2em;
     border: 0.1em solid #ccc;
     border-radius: 0.5em;
     background-color: #efefef;
     padding: 0em 1em;
-    font-size: 1.2em;
+    font-size: 1.0em;
     box-shadow: 0em 0.1em 0.5em #ccc;
 }
 .searchbutton {
