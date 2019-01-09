@@ -68,7 +68,7 @@
 }
         </script>
         <div id="corp-logo">
-            <img src="images/logo.png" border="0" />
+            <img src="images/logo.png" border="0" width="246px" height="123px" />
         </div>
         <div id"logincontainer" style="position:fixed;top: 50%;left: 50%;width:30em;height:12em;margin-top: -9em;margin-left: -15em;border: 1px solid #ccc;background-color: #f3f3f3">
             <div align="center" style="position:fixed;top: 33%;left: 41%;">
