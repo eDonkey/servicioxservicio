@@ -72,7 +72,7 @@
         </div>
         <div id="searchcontainer" style="position:fixed;top: 50%;left: 50%;width:30em;height:12em;margin-top: -9em;margin-left: -15em;border: 1px solid #ccc;background-color: #f3f3f3;visibility:visible;">
             <form method="post" action="">
-                <p><input type="text" id="busqueda" name="busqueda" size="30" style="padding: 10px 20px 11px !important;font-size: 21px !important;background-color: #F36C8C;font-weight: bold;text-shadow: 1px 1px #F36C8C;color: #ffffff;border-radius: 100px;-moz-border-radius: 100px;-webkit-border-radius: 100px;border: 1px solid #F36C8C;cursor: pointer;box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;" /><input type="submit" value="BUSCAR" /></p>
+                <p><input type="text" id="busqueda" name="busqueda" size="30" /><input type="submit" value="BUSCAR" style="padding: 10px 20px 11px !important;font-size: 21px !important;background-color: #F36C8C;font-weight: bold;text-shadow: 1px 1px #F36C8C;color: #ffffff;border-radius: 100px;-moz-border-radius: 100px;-webkit-border-radius: 100px;border: 1px solid #F36C8C;cursor: pointer;box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;" /></p>
             </form>
         </div>
         <div id"logincontainer" style="position:fixed;top: 50%;left: 50%;width:30em;height:12em;margin-top: -9em;margin-left: -15em;border: 1px solid #ccc;background-color: #f3f3f3;visibility:hidden;">
