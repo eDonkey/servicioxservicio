@@ -15,9 +15,12 @@ include("config/fbconfig.php");
             <img src="images/logo.png" border="0" width="246px" height="123px" />
         </div>
         <div id="searchcontainer" class="searchcontainer">
-            <form method="post" action="">
-                <p><input type="text" id="busqueda" name="busqueda" size="30" class="searchfield" /><input type="submit" value="BUSCAR" class="searchbutton" /></p>
-            </form>
+            <div id="searchcontent" class="searchcontent">
+                <form method="post" action="">
+                    <p><input type="text" id="busqueda" name="busqueda" size="30" class="searchfield" /></p>
+                    <p><input type="submit" value="BUSCAR" class="searchbutton" /></p>
+                </form>
+            </div>
         </div>
         <div id="logincontainer" class="logincontainer">
             <div id="logincontent" align="center" class="logincontent">

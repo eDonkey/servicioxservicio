@@ -58,6 +58,11 @@ body {
     top: 33%;
     left: 41%;
 }
+.searchcontent {
+    position: fixed;
+    top: 33%;
+    left: 41%;
+}
 .email-login {
     visibility: hidden;
     opacity: 0;
