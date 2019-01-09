@@ -11,6 +11,9 @@
                 -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
                 box-sizing: border-box;
             }
+            body {
+                background-color: #f1d849;
+            }
         </style>
     </head>
     <body>
@@ -64,6 +67,9 @@
     div.style.opacity = 1;
 }
         </script>
+        <div id="corp-logo">
+            <img src="images/logo.png" border="0" />
+        </div>
         <div id"logincontainer" style="position:fixed;top: 50%;left: 50%;width:30em;height:12em;margin-top: -9em;margin-left: -15em;border: 1px solid #ccc;background-color: #f3f3f3">
             <div align="center" style="position:fixed;top: 20%;left: 41%;">
                 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
