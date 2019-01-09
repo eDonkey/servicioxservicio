@@ -41,6 +41,6 @@ include("config/fbconfig.php");
                     </form>
                 </div>
             </div>
-         <input id="btn" type="button" value="Login" onclick="hideDiv('searchcontainer'); setTimeout(showDiv('logincontainer'), 5000);"/>
+         <input id="showlogin" class="searchbutton" type="button" value="INGRESAR" onclick="hideDiv('searchcontainer'); setTimeout(showDiv('logincontainer'), 5000);"/>
     </body>
 </html>
