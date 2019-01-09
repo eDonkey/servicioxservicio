@@ -72,7 +72,7 @@
         </div>
         <div id="searchcontainer" style="position:fixed;top: 50%;left: 50%;width:30em;height:12em;margin-top: -9em;margin-left: -15em;border: 1px solid #ccc;background-color: #f3f3f3;visibility:visible;">
             <form method="post" action="">
-                <p><input type="text" id="busqueda" name="busqueda" width="30" /><input type="submit" value="BUSCAR" /></p>
+                <p><input type="text" id="busqueda" name="busqueda" size="30" /><input type="submit" value="BUSCAR" /></p>
             </form>
         </div>
         <div id"logincontainer" style="position:fixed;top: 50%;left: 50%;width:30em;height:12em;margin-top: -9em;margin-left: -15em;border: 1px solid #ccc;background-color: #f3f3f3;visibility:hidden;">
