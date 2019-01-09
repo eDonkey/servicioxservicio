@@ -63,6 +63,9 @@ body {
     top: 40%;
     left: 37%;
 }
+p {
+    align: center;
+}
 .email-login {
     visibility: hidden;
     opacity: 0;
