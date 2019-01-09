@@ -17,8 +17,8 @@ include("config/fbconfig.php");
         <div id="searchcontainer" class="searchcontainer">
             <div id="searchcontent" class="searchcontent">
                 <form method="post" action="">
-                    <p><input type="text" id="busqueda" name="busqueda" size="30" class="searchfield" /></p>
-                    <p><input type="submit" value="BUSCAR" class="searchbutton" /></p>
+                    <p align="center"><input type="text" id="busqueda" name="busqueda" size="30" class="searchfield" /></p>
+                    <p align="center"><input type="submit" value="BUSCAR" class="searchbutton" /></p>
                 </form>
             </div>
         </div>
