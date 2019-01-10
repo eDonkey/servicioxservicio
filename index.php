@@ -33,9 +33,9 @@ include("config/site_based_checks.php");
 <?php } ?>
                 Ingresar usando email<br />
                     <form method="post" action="" autocomplete="email">
-                        EMAIL <input class="searchfield" type="text" onclick="showDiv('email-login')" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="ejemplo@tumail.com" required /><br />
+                        <label>EMAIL </label><input class="emailfield" type="text" onclick="showDiv('email-login')" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="ejemplo@tumail.com" required /><br />
                             <div id="email-login" class="email-login">
-                                CONTRASEÑA <input class="searchfield" type="password" id="password" name="password" required /><br />
+                                <label>CONTRASEÑA </label><input class="passwordfield" type="password" id="password" name="password" required /><br />
                                 <input type="submit" name="Ingresar" value="INGRESAR" /><br />
                                 <h5><a href="">Recuperar contraseña</a></h5>
                         </div>
