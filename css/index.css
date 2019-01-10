@@ -114,7 +114,7 @@ body {
     margin-left: -15em;
     border: 1px solid #ccc;
     background-color: #f3f3f3;
-    visibility:visible;
+    visibility:hidden;
 }
 .logincontainer {
     position:fixed;
