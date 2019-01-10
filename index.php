@@ -46,6 +46,7 @@ include("config/site_based_checks.php");
             <input id="showlogin" class="loginbutton" type="button" value="INGRESAR" onclick="hideDiv('searchcontainer'); setTimeout(showDiv('logincontainer'), 5000);"/>
             <input id="showlogin" class="registerbutton" type="button" value="REGISTRARSE" onclick="hideDiv('searchcontainer'); setTimeout(showDiv('logincontainer'), 5000);"/>
             <input id="showlogin" class="searchbutton" type="button" value="BUSCAR" onclick="hideDiv('searchcontainer'); setTimeout(showDiv('logincontainer'), 5000);"/>
+            <div class="copyright">Copyright 2019 - &copy;</div>
         </div>
     </body>
 </html>
