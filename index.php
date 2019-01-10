@@ -1,7 +1,7 @@
 <?php
 include("config/fbconfig.php");
 if (!isset($_COOKIE['firsttime'])) {
-    setcookie("firsttime", "no");
+    setcookie("firsttime", "no", time() + (10 * 365 * 24 * 60 * 60));
     echo "Primer visita";
     exit();
 } else {
