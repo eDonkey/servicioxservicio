@@ -43,8 +43,8 @@ include("config/site_based_checks.php");
                 </div>
             </div>
         <div class="footer">
-            <input id="showlogin" class="searchbutton" type="button" value="INGRESAR" onclick="hideDiv('searchcontainer'); setTimeout(showDiv('logincontainer'), 5000);"/>
-            <input id="showlogin" class="searchbutton" type="button" value="REGISTRARSE" onclick="hideDiv('searchcontainer'); setTimeout(showDiv('logincontainer'), 5000);"/>
+            <input id="showlogin" class="loginbutton" type="button" value="INGRESAR" onclick="hideDiv('searchcontainer'); setTimeout(showDiv('logincontainer'), 5000);"/>
+            <input id="showlogin" class="registerbutton" type="button" value="REGISTRARSE" onclick="hideDiv('searchcontainer'); setTimeout(showDiv('logincontainer'), 5000);"/>
             <input id="showlogin" class="searchbutton" type="button" value="BUSCAR" onclick="hideDiv('searchcontainer'); setTimeout(showDiv('logincontainer'), 5000);"/>
         </div>
     </body>
