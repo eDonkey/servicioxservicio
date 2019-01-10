@@ -44,7 +44,7 @@ include("config/site_based_checks.php");
                         <td><input class="passwordfield" type="password" name="password" placeholder="Pass.." size="30" required /></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="submit" name="Ingresar" value="INGRESAR" /></td>
+                        <td colspan="2"><input class="ingresarbutton" type="submit" name="Ingresar" value="INGRESAR" /></td>
                     </tr>
                     <tr>
                         <td colspan="2"><h5><a href="">Recuperar contraseña</a></h5></td>
