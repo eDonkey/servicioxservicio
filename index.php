@@ -42,6 +42,8 @@ include("config/site_based_checks.php");
                     </form>
                 </div>
             </div>
+        <footer>
          <input id="showlogin" class="searchbutton" type="button" value="INGRESAR" onclick="hideDiv('searchcontainer'); setTimeout(showDiv('logincontainer'), 5000);"/>
+            </footer>
     </body>
 </html>
