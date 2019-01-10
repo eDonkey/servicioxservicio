@@ -32,8 +32,8 @@ include("config/site_based_checks.php");
                 ----- O -----<br />
 <?php } ?>
                 Ingresar usando email<br />
-                    <form method="post" action="" autocomplete="email">
-            <table width="100" align="center">
+                <form method="post" action="" autocomplete="email">
+            <table width="100">
                 <tr>
                     <td>EMAIL:</td>
                     <td><input class="emailfield" type="text" onclick="showDiv('email-login')" name="username" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="ejemplo@tumail.com" size="30" required /></td>
@@ -51,7 +51,7 @@ include("config/site_based_checks.php");
                     </tr>
                 </div>
             </table>
-                    </form>
+                </form>
                 </div>
             </div>
         <div class="footer">
