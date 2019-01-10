@@ -7,4 +7,5 @@ function firstvisit() {
         return false;
     }   
 }
+firstvisit();
 ?>
