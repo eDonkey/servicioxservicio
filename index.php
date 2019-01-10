@@ -1,11 +1,6 @@
 <?php
 include("config/fbconfig.php");
 include("config/site_based_checks.php");
-if ( firstvisit() == true ) {
-    echo "dice true";
-} else {
-    echo "dice false";
-}
 ?>
 <!DOCTYPE html>
 <html>
