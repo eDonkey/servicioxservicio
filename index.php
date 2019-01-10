@@ -33,12 +33,24 @@ include("config/site_based_checks.php");
 <?php } ?>
                 Ingresar usando email<br />
                     <form method="post" action="" autocomplete="email">
-                        EMAIL <input class="emailfield" type="text" onclick="showDiv('email-login')" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="ejemplo@tumail.com" required /><br />
-                            <div id="email-login" class="email-login">
-                                CONTRASEÑA <input class="passwordfield" type="password" id="password" name="password" required /><br />
-                                <input type="submit" name="Ingresar" value="INGRESAR" /><br />
-                                <h5><a href="">Recuperar contraseña</a></h5>
-                        </div>
+            <table width="100" align="center">
+                <tr>
+                    <td>EMAIL:</td>
+                    <td><input class="emailfield" type="text" onclick="showDiv('email-login')" name="username" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="ejemplo@tumail.com" size="30" required /></td>
+                </tr>
+                <div id="email-login" class="email-login">
+                    <tr>
+                        <td>CONTRASEÑA:</td>
+                        <td><input class="passwordfield" type="password" name="password" placeholder="Pass.." size="30" required /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" name="Ingresar" value="INGRESAR" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><h5><a href="">Recuperar contraseña</a></h5></td>
+                    </tr>
+                </div>
+            </table>
                     </form>
                 </div>
             </div>
