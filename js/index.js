@@ -11,9 +11,14 @@ function hideDiv(divid) {
     console.log("DIV OCULTO");
 } 
 function checkDivVisible(divid) {
-    divsearch = document.getElementById('searchcontainer').style.visibility;
-    divlogin = document.getElementById('logincontainer').style.visibility;
+    divsearch = document.getElementById('searchcontainer');
+    divlogin = document.getElementById('logincontainer');
     console.log(divsearch);
-    console.log(divlogin);
-    console.log(divid);
+    if (divsearch.style.visibility == "visible") {
+        hideDiv("searchcontainer");
+    }
+    if (divlogin.style.visibility == "visible") {
+        hideDiv("logincontainer");
+    }
+    showDiv(divid);
 }

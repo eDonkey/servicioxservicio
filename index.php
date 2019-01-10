@@ -24,6 +24,15 @@ include("config/site_based_checks.php");
                 </form>
             </div>
         </div>
+        <div id="registercontainer" class="registercontainer">
+            <div id="searchcontent" class="searchcontent">
+                <form method="post" action="">
+                    <p align="center">Ingrese lo que quiera buscar (register): </p>
+                    <p align="center"><input type="text" id="busqueda" name="busqueda" size="30" class="searchfield" /></p>
+                    <p align="center"><input type="submit" value="BUSCAR" class="searchbutton" /></p>
+                </form>
+            </div>
+        </div>
         <div id="logincontainer" class="logincontainer">
             <div id="logincontent" align="center" class="logincontent">
 <?php if ($fbstatus == true) { ?>
