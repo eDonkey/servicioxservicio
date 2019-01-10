@@ -1,5 +1,13 @@
 <?php
 include("config/fbconfig.php");
+if (!isset($_COOKIE['firsttime'])) {
+    setcookie("firsttime", "no");
+    echo "Primer visita";
+    exit();
+} else {
+    echo "Siguientes visitas";
+    exit();
+}
 ?>
 <!DOCTYPE html>
 <html>
