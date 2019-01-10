@@ -10,15 +10,18 @@ function hideDiv(divid) {
     div.style.opacity = 0;
     console.log("DIV OCULTO");
 } 
-function checkDivVisible(divid) {
-    divsearch = document.getElementById('searchcontainer');
-    divlogin = document.getElementById('logincontainer');
-    console.log(divsearch);
-    if (divsearch.style.visibility == "visible") {
-        hideDiv("searchcontainer");
-    }
-    if (divlogin.style.visibility == "visible") {
-        hideDiv("logincontainer");
-    }
-    showDiv(divid);
+function checkDivVisible(divtoshow, divtohide, divtohide2) {
+    hideDiv(divtohide);
+    hideDiv(divtohide2);
+    showDiv(divtoshow);  
+//        divsearch = document.getElementById('searchcontainer');
+//        divlogin = document.getElementById('logincontainer');
+//        console.log(divsearch);
+//        if (divsearch.style.visibility == "visible") {
+//            hideDiv("searchcontainer");
+//        }
+//        if (divlogin.style.visibility == "visible") {
+//            hideDiv("logincontainer");
+//        }
+//        showDiv(divid);
 }
