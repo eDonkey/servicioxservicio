@@ -117,3 +117,6 @@ body {
 .privacy {
     float: right;
 }
+.footerbuttons {
+    float: inherit;
+}
