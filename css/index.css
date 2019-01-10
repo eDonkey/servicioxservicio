@@ -68,3 +68,12 @@ body {
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
 }
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
