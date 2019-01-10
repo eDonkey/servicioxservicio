@@ -108,7 +108,7 @@ body {
 .logincontainer {
     position:fixed;
     top: 50%;
-    left: 33%;
+    left: 50%;
     width:30em;
     height:12em;
     margin-top: -9em;
