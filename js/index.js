@@ -9,4 +9,11 @@ function hideDiv(divid) {
     div.style.visibility = "hidden";
     div.style.opacity = 0;
     console.log("DIV OCULTO");
+} 
+function checkDivVisible(divid) {
+    divsearch = document.getElementById('searchcontainer').style.visibility;
+    divlogin = document.getElementById('logincontainer').style.visibility;
+    console.log(divsearch);
+    console.log(divlogin);
+    console.log(divid);
 }

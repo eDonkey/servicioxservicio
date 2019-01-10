@@ -57,7 +57,7 @@ include("config/site_based_checks.php");
         <div class="footer">
             <div class="footerbuttons">
                 <input id="showlogin" class="loginbutton" type="button" value="INGRESAR" onclick="hideDiv('searchcontainer'); setTimeout(showDiv('logincontainer'), 5000);"/>
-                <input id="showlogin" class="registerbutton" type="button" value="REGISTRARSE" onclick="hideDiv('searchcontainer'); setTimeout(showDiv('logincontainer'), 5000);"/>
+                <input id="showlogin" class="registerbutton" type="button" value="REGISTRARSE" onclick="checkDivVisible('registercontainer');"/>
                 <input id="showlogin" class="searchbutton" type="button" value="BUSCAR" onclick="hideDiv('logincontainer'); setTimeout(showDiv('searchcontainer'), 5000);"/>
             </div>
             <div class="copyright">Copyright 2019 - &copy;</div>
