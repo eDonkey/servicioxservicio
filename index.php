@@ -1,12 +1,10 @@
 <?php
 include("config/fbconfig.php");
-if (!isset($_COOKIE['firsttime'])) {
-    setcookie("firsttime", "no", time() + (10 * 365 * 24 * 60 * 60));
-    echo "Primer visita";
-    exit();
+include("config/site_based_checks.php");
+if ( firstvisit() == true ) {
+    echo "dice true";
 } else {
-    echo "Siguientes visitas";
-    exit();
+    echo "dice false";
 }
 ?>
 <!DOCTYPE html>
