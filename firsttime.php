@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
  
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
  
     <style>
       .red
@@ -42,11 +42,11 @@
  
         		<div class="carousel-inner" role="listbox">
         			<div class="carousel-item active">
-        				<img src="http://azoom-sites.rockthemes.net/abboxed/wp-content/uploads/sites/14/2015/05/abboxed-restaurant-portfolio2.jpg" alt="First Slide" />
+        				<img src="https://cdna.artstation.com/p/assets/images/images/012/850/788/large/sergey-sydney-knysh-combine-1.jpg?1536828945" alt="First Slide" />
         			</div>
  
         			<div class="carousel-item">
-        				<img src="http://azoom-sites.rockthemes.net/abboxed/wp-content/uploads/sites/14/2015/05/abboxed-beach-portfolio.jpg" alt="Second Slide" />
+        				<img src="https://i.imgur.com/qYSoVGX.jpg" alt="Second Slide" />
  
         				<div class="carousel-caption">
         					<h2>Best Caption Title</h2>
@@ -55,7 +55,7 @@
         			</div>
  
         			<div class="carousel-item">
-        				<img src="http://azoom-sites.rockthemes.net/abboxed/wp-content/uploads/sites/14/2015/05/abboxed-beach-portfolio2.jpg" alt="Third Slide" />
+        				<img src="https://media.moddb.com/images/members/1/441/440306/profile/88-8_Bugs_Banner.png" alt="Third Slide" />
         			</div>
         		</div>
  
@@ -73,7 +73,7 @@
       </div>
     </div>
       <!-- jQuery first, then Bootstrap JS. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
     <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
   </body>
 </html>
