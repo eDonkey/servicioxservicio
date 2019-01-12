@@ -11,10 +11,10 @@ include("config/site_based_checks.php");
         <script src="js/bootstrap/dist/js/bootstrap.js"></script>
         <script src="js/fbindex.js"></script>
         <script src="js/index.js"></script>
-        <script src="js/lightbox/src/js/lightbox.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/js/lightbox.min.js"></script>
         <script src="js/jquery-cookie/src/jquery.cookie.js"></script>
         <link rel="stylesheet" href="css/index.css">
-        <link href="js/lightbox/src/css/lightbox.css" rel="stylesheet">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/css/lightbox.min.css">
     </head>
     <body>
         <div id="corp-logo">
@@ -98,7 +98,7 @@ include("config/site_based_checks.php");
                 <input id="showlogin" class="searchbutton" type="button" value="BUSCAR" onclick="checkDivVisible('searchcontainer', 'logincontainer', 'registercontainer');"/>
             </div>
             <div class="copyright">Copyright 2019 - &copy; - <a id="ele_id" href="https://www.google.com/" data-lightbox="ele_id" rel="lightbox" title="Ayuda">Ayuda</a></div>
-            <div class="privacy">Terminos <a href="http://microsoft.com" id="ele_id" rel="lightbox">legales</a> y <a href="http://yahoo.com" id="ele_id" rel="lightbox">privacidad</a>.</div>
+            <div class="privacy">Terminos <a href="http://microsoft.com" id="ele_id" rel="lightbox" data-lightbox="lightbox">legales</a> y <a href="http://yahoo.com" id="ele_id" rel="lightbox" data-lightbox="lightbox">privacidad</a>.</div>
         </div>
         <script>
         $('document').ready(function(){
