@@ -9,12 +9,13 @@ include("config/site_based_checks.php");
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/index.css">
         <link href="js/lightbox/src/css/lightbox.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
+        <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
         <script src="js/fbindex.js"></script>
         <script src="js/index.js"></script>
         <script src="js/lightbox/src/js/lightbox.js"></script>
         <script src="js/jquery-cookie/src/jquery.cookie.js"></script>
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
-        <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+
         <script>
         $('document').ready(function(){
             if ($.cookie('firsttime') != TRUE) {
