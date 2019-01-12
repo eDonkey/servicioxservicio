@@ -39,7 +39,7 @@ include("config/site_based_checks.php");
                         </tr>
                         <tr>
                             <td>DESCRIPCION DE SERVICIO:</td>
-                            <td><textarea class="registerformfields" name="descripcion"></textarea></td>
+                            <td><textarea class="registerformtextarea" name="descripcion"></textarea></td>
                         </tr>
                         <tr>
                             <td>EMAIL:</td>
