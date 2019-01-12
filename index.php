@@ -8,8 +8,19 @@ include("config/site_based_checks.php");
         <title>Facebook Login JavaScript Example</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/index.css">
+        <link href="js/lightbox/src/css/lightbox.css" rel="stylesheet">
         <script src="js/fbindex.js"></script>
         <script src="js/index.js"></script>
+        <script src="js/lightbox/src/js/lightbox.js"></script>
+        <script src="js/jquery-cookie/src/jquery.cookie.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
+        <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+        <script>
+        $('document').ready(function(){
+            if ($.cookie('firsttime') != TRUE) {
+                $('#ele_id').trigger('click');
+        });
+        </script>
     </head>
     <body>
         <div id="corp-logo">
@@ -69,7 +80,7 @@ include("config/site_based_checks.php");
                 <input id="showlogin" class="registerbutton" type="button" value="REGISTRARSE" onclick="checkDivVisible('registercontainer','logincontainer', 'searchcontainer');"/>
                 <input id="showlogin" class="searchbutton" type="button" value="BUSCAR" onclick="checkDivVisible('searchcontainer', 'logincontainer', 'registercontainer');"/>
             </div>
-            <div class="copyright">Copyright 2019 - &copy;</div>
+            <div class="copyright">Copyright 2019 - &copy; - <a id ="ele_id" href="firsttime.php" rel="lightbox" title="Ayuda">Ayuda</a></div>
             <div class="privacy">Terminos <a href="#">legales</a> y <a href="#">privacidad</a>.</div>
         </div>
     </body>
