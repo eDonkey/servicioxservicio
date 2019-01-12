@@ -7,14 +7,14 @@ include("config/site_based_checks.php");
     <head>
         <title>Facebook Login JavaScript Example</title>
         <meta charset="UTF-8">
-        <script src="js/jquery-2.1.4.min.js"></script>
+<!--        <script src="js/jquery-2.1.4.min.js"></script> -->
         <script src="js/bootstrap/dist/js/bootstrap.js"></script>
         <script src="js/fbindex.js"></script>
         <script src="js/index.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/js/lightbox.min.js"></script>
+        <script src="js/lightbox/dist/js/lightbox-plus-jquery.min.js"></script>
         <script src="js/jquery-cookie/src/jquery.cookie.js"></script>
         <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/css/lightbox.min.css">
+        <link rel="stylesheet" href="js/lightbox/dist/css/lightbox.min.css">
     </head>
     <body>
         <div id="corp-logo">
