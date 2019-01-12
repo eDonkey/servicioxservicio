@@ -30,7 +30,7 @@ include("config/site_based_checks.php");
             </div>
         </div>
         <div id="registercontainer" class="registercontainer">
-            <div id="registercontent" class="registercontet">
+            <div id="registercontent" class="registercontent">
                 <form method="post" action="" autocomplete="email">
                     <table>
                         <tr>
