@@ -97,8 +97,8 @@ include("config/site_based_checks.php");
                 <input id="showlogin" class="registerbutton" type="button" value="REGISTRARSE" onclick="checkDivVisible('registercontainer','logincontainer', 'searchcontainer');"/>
                 <input id="showlogin" class="searchbutton" type="button" value="BUSCAR" onclick="checkDivVisible('searchcontainer', 'logincontainer', 'registercontainer');"/>
             </div>
-            <div class="copyright">Copyright 2019 - &copy; - <a id="ele_id" href="https://www.google.com/" data-lightbox="ele_id" rel="lightbox" title="Ayuda">Ayuda</a></div>
-            <div class="privacy">Terminos <a href="http://microsoft.com" id="ele_id" rel="lightbox" data-lightbox="lightbox">legales</a> y <a href="http://yahoo.com" id="ele_id" rel="lightbox" data-lightbox="lightbox">privacidad</a>.</div>
+            <div class="copyright">Copyright 2019 - &copy; - <a data-title="My caption" id="ele_id" href="https://www.google.com/" data-lightbox="ele_id" rel="lightbox" title="Ayuda">Ayuda</a></div>
+            <div class="privacy">Terminos <a href="http://microsoft.com" id="ele_id" rel="lightbox" data-lightbox="lightbox" data-title="My caption">legales</a> y <a href="http://yahoo.com" id="ele_id" rel="lightbox" data-lightbox="lightbox" data-title="My caption">privacidad</a>.</div>
         </div>
         <script>
         $('document').ready(function(){
