@@ -35,23 +35,23 @@ include("config/site_based_checks.php");
                     <table>
                         <tr>
                             <td>NOMBRE Y APELLIDO:</td>
-                            <td><input class="registerfield" type="text" name="fullname" required /></td>
+                            <td><input class="registerformfields" type="text" name="fullname" required /></td>
                         </tr>
                         <tr>
                             <td>DESCRIPCION DE SERVICIO:</td>
-                            <td><textarea class="registerfield" name="descripcion"></textarea></td>
+                            <td><textarea class="registerformfields" name="descripcion"></textarea></td>
                         </tr>
                         <tr>
                             <td>EMAIL:</td>
-                            <td><input class="registerfield" type="text" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required /></td>
+                            <td><input class="registerformfields" type="text" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required /></td>
                         </tr>
                         <tr>
                             <td>CONTRASEÑA:</td>
-                            <td><input class="registerfield" type="password" name="password" required /></td>
+                            <td><input class="registerformfields" type="password" name="password" required /></td>
                         </tr>
                         <tr>
                             <td>CONFIRMAR CONTRASEÑA:</td>
-                            <td><input class="registerfield" type="password" name="confirm_password" required /></td>
+                            <td><input class="registerformfields" type="password" name="confirm_password" required /></td>
                         </tr>
                         <tr>
                             <td colspan="2"><input class="ingresarbutton" type="submit" name="Ingresar" value="REGISTRAR" /></td>
