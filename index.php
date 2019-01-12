@@ -54,7 +54,7 @@ include("config/site_based_checks.php");
                             <td><input class="registerformfields" type="password" name="confirm_password" required /></td>
                         </tr>
                         <tr>
-                            <td colspan="2"><input class="ingresarbutton" type="submit" name="Ingresar" value="REGISTRAR" /></td>
+                            <td colspan="2" align="center"><input class="ingresarbutton" type="submit" name="Ingresar" value="REGISTRAR" /></td>
                         </tr>
                     </table>
                 </form>
