@@ -9,8 +9,9 @@ include("config/site_based_checks.php");
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/index.css">
         <link href="js/lightbox/src/css/lightbox.css" rel="stylesheet">
+        <link href="js/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
         <script src="js/jquery-2.1.4.min.js"></script>
-        <script src="js/bootstrap.js"></script>
+        <script src="js/bootstrap/dist/js/bootstrap.js"></script>
         <script src="js/fbindex.js"></script>
         <script src="js/index.js"></script>
         <script src="js/lightbox/src/js/lightbox.js"></script>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
      <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap/dist/js/bootstrap.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
  
