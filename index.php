@@ -74,13 +74,16 @@ include("config/site_based_checks.php");
                 <input id="showlogin" class="registerbutton" type="button" value="REGISTRARSE" onclick="checkDivVisible('registercontainer','logincontainer', 'searchcontainer');"/>
                 <input id="showlogin" class="searchbutton" type="button" value="BUSCAR" onclick="checkDivVisible('searchcontainer', 'logincontainer', 'registercontainer');"/>
             </div>
-            <div class="copyright">Copyright 2019 - &copy; - <a id="ele_id" href="firsttime.php" rel="lightbox" title="Ayuda">Ayuda</a></div>
+            <div class="copyright">Copyright 2019 - &copy; - <a id="ele_id" href="https://www.google.com/" rel="lightbox" title="Ayuda">Ayuda</a></div>
             <div class="privacy">Terminos <a href="#">legales</a> y <a href="#">privacidad</a>.</div>
         </div>
         <script>
-        $('document').ready(function(){
+        $.('document').ready(function(){
+            console.log("aca va bien");
             if ($.cookie('firsttime') != TRUE) {
+                console.log("aca tambien");
                 $('#ele_id').trigger('click');
+                console.log("finale");
         }};
         </script>
     </body>
