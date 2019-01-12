@@ -30,11 +30,33 @@ include("config/site_based_checks.php");
             </div>
         </div>
         <div id="registercontainer" class="registercontainer">
-            <div id="searchcontent" class="searchcontent">
-                <form method="post" action="">
-                    <p align="center">Ingrese lo que quiera buscar (register): </p>
-                    <p align="center"><input type="text" id="busqueda" name="busqueda" size="30" class="searchfield" /></p>
-                    <p align="center"><input type="submit" value="BUSCAR" class="searchbutton" /></p>
+            <div id="registercontent" class="registercontet">
+                <form method="post" action="" autocomplete="email">
+                    <table width="100">
+                        <tr>
+                            <td>NOMBRE Y APELLIDO:</td>
+                            <td><input class="registerfield" type="text" name="fullname" required /></td>
+                        </tr>
+                        <tr>
+                            <td>DESCRIPCION DE SERVICIO:</td>
+                            <td><input class="registerfield" type="text" name="descripcion" required /></td>
+                        </tr>
+                        <tr>
+                            <td>EMAIL:</td>
+                            <td><input class="registerfield" type="text" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required /></td>
+                        </tr>
+                        <tr>
+                            <td>CONTRASEÑA:</td>
+                            <td><input class="registerfield" type="password" name="password" required /></td>
+                        </tr>
+                        <tr>
+                            <td>CONFIRMAR CONTRASEÑA:</td>
+                            <td><input class="registerfield" type="password" name="confirm_password" required /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input class="ingresarbutton" type="submit" name="Ingresar" value="REGISTRAR" /></td>
+                        </tr>
+                    </table>
                 </form>
             </div>
         </div>
