@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
- 
+     <script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
  
@@ -42,11 +43,11 @@
  
         		<div class="carousel-inner" role="listbox">
         			<div class="carousel-item active">
-        				<img src="https://cdna.artstation.com/p/assets/images/images/012/850/788/large/sergey-sydney-knysh-combine-1.jpg?1536828945" alt="First Slide" />
+        				<img src="images/slide1.jpg" alt="First Slide" />
         			</div>
  
         			<div class="carousel-item">
-        				<img src="https://i.imgur.com/qYSoVGX.jpg" alt="Second Slide" />
+        				<img src="images/slide2.jpg" alt="Second Slide" />
  
         				<div class="carousel-caption">
         					<h2>Best Caption Title</h2>
@@ -55,7 +56,7 @@
         			</div>
  
         			<div class="carousel-item">
-        				<img src="https://media.moddb.com/images/members/1/441/440306/profile/88-8_Bugs_Banner.png" alt="Third Slide" />
+        				<img src="images/slide3.png" alt="Third Slide" />
         			</div>
         		</div>
  
@@ -73,7 +74,6 @@
       </div>
     </div>
       <!-- jQuery first, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
-    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+
   </body>
 </html>
