@@ -98,7 +98,7 @@ include("config/site_based_checks.php");
                 <input id="showlogin" class="searchbutton" type="button" value="BUSCAR" onclick="checkDivVisible('searchcontainer', 'logincontainer', 'registercontainer');"/>
             </div>
             <div class="copyright">Copyright 2019 - &copy; - <a id="ele_id" href="https://www.google.com/" data-lightbox="ele_id" rel="lightbox" title="Ayuda">Ayuda</a></div>
-            <div class="privacy">Terminos <a href="#">legales</a> y <a href="#">privacidad</a>.</div>
+            <div class="privacy">Terminos <a href="http://microsoft.com" id="ele_id" rel="lightbox">legales</a> y <a href="http://yahoo.com" id="ele_id" rel="lightbox">privacidad</a>.</div>
         </div>
         <script>
         $('document').ready(function(){
