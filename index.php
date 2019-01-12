@@ -81,7 +81,7 @@ include("config/site_based_checks.php");
         $('document').ready(function(){
             if ($.cookie('firsttime') != TRUE) {
                 $('#ele_id').trigger('click');
-        });
+        }};
         </script>
     </body>
 </html>
