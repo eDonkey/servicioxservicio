@@ -32,14 +32,14 @@ include("config/site_based_checks.php");
         <div id="registercontainer" class="registercontainer">
             <div id="registercontent" class="registercontet">
                 <form method="post" action="" autocomplete="email">
-                    <table width="100">
+                    <table>
                         <tr>
                             <td>NOMBRE Y APELLIDO:</td>
                             <td><input class="registerfield" type="text" name="fullname" required /></td>
                         </tr>
                         <tr>
                             <td>DESCRIPCION DE SERVICIO:</td>
-                            <td><input class="registerfield" type="text" name="descripcion" required /></td>
+                            <td><textarea class="registerfield" name="descripcion"></textarea></td>
                         </tr>
                         <tr>
                             <td>EMAIL:</td>
