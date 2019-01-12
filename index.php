@@ -102,12 +102,9 @@ include("config/site_based_checks.php");
         </div>
         <script>
         $('document').ready(function(){
-            console.log("aca va bien");
             if ($.cookie('firsttime') != TRUE) {
-                console.log("aca tambien");
                 $('#ele_id').trigger('click');
-                console.log("finale");
-        }};
+        }});
         </script>
     </body>
 </html>
