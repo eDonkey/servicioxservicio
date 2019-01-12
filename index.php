@@ -78,7 +78,7 @@ include("config/site_based_checks.php");
             <div class="privacy">Terminos <a href="#">legales</a> y <a href="#">privacidad</a>.</div>
         </div>
         <script>
-        $.('document').ready(function(){
+        $('document').ready(function(){
             console.log("aca va bien");
             if ($.cookie('firsttime') != TRUE) {
                 console.log("aca tambien");
