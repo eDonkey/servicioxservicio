@@ -23,4 +23,8 @@ function comparepassword($pass,$confirmpass) {
 function password_encrypt($pass, $hash) {
     return hash($pass, $hash);
 }
+function validationmail($to) {
+    mail($to, "Probando", "EMAIL DE PRUEBA");
+}
+validationmail("kooltheoutsider@gmail.com");
 ?>
