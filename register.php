@@ -13,7 +13,7 @@ if (comparepassword($password, $confirm_password) == true ) {
 } else {
     return $error10;
 }
-$registrationquery = "INSERT INTO services SET fullname='$fullname', descripcion='$descripcion', email='$email'";
+$registrationquery = "INSERT INTO services SET fullname='$fullname', descripcion='$descripcion', email='$email', password='$passtosave'";
 mysqli_query($connect, $registrationquery) or die(mysqli_error($connect));
 echo "All goooood!";
 ?>
