@@ -1,6 +1,7 @@
 <?php
 include("config/fbconfig.php");
 include("config/site_based_checks.php");
+firstvisit();
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,7 +32,7 @@ include("config/site_based_checks.php");
         </div>
         <div id="registercontainer" class="registercontainer">
             <div id="registercontent" class="registercontent">
-                <form method="post" action="" autocomplete="email">
+                <form method="post" action="register.php" autocomplete="email">
                     <table>
                         <tr>
                             <td>NOMBRE Y APELLIDO:</td>

@@ -1,4 +1,5 @@
 <?php
+//index functions
 function firstvisit() {
     if (!isset($_COOKIE['firsttime'])) {
         setcookie("firsttime", "no", time() + (10 * 365 * 24 * 60 * 60));
@@ -7,13 +8,19 @@ function firstvisit() {
         return false;
     }   
 }
-//firstvisit();
+//registration functions
 function createUniqueKeywordId() {
     $baseid = rand(9999, 9999999999);
-    $length = strlen((string)$baseid);
-    echo $baseid;
-    echo "<br />";
-    echo $length;
+    return $baseid;
 }
-createUniqueKeywordId();
+function comparepassword($pass,$confirmpass) {
+    if ($pass === $confirmpass) {
+        return true;
+    } else {
+        return false;
+    }
+}
+function password_encrypt($pass, $hash) {
+    return hash($pass, $hash);
+}
 ?>
