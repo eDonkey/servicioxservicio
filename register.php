@@ -7,15 +7,9 @@ $descripcion = $_POST['descripcion'];
 $email = $_POST['email'];
 $password = $_POST['password'];
 $confirm_password = $_POST['confirm_password'];
-$comparationresult = comparepassword($password, $confirm_password);
 //$keywords_id = createUniqueKeywordId();
-if ( $comparationresult == true ) {
-    $passtosave = password_encrypt($_POST['password'], $passwordhash);
-    var_dump($_POST['password']);
-    echo "<br />";
-    var_dump($passwordhash);
-    echo "<br />";
-    die(var_dump(password_encrypt($passwordhash, $_POST['password'])));
+if ( comparepassword($password, $confirm_password) == true ) {
+    $passtosave = password_encrypt($passwordhash, $_POST['password']);
 } else {
     return $error10;
 }
