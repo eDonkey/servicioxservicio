@@ -11,6 +11,8 @@ function firstvisit() {
 function createUniqueKeywordId() {
     $baseid = rand(9999, 9999999999);
     $length = strlen((string)$baseid);
+    echo $baseid;
+    echo "<br />";
     echo $length;
 }
 createUniqueKeywordId();
