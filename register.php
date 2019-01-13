@@ -15,7 +15,7 @@ if ( $comparationresult == true ) {
     echo "<br />";
     var_dump($passwordhash);
     echo "<br />";
-    die(var_dump(password_encrypt($_POST['password'], $passwordhash)));
+    die(var_dump(password_encrypt($passwordhash, $_POST['password'])));
 } else {
     return $error10;
 }
