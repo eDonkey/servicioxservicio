@@ -9,7 +9,8 @@ $password = $_POST['password'];
 $confirm_password = $_POST['confirm_password'];
 //$keywords_id = createUniqueKeywordId();
 if (comparepassword($password, $confirm_password) == true ) {
-    $passtosave = password_encrypt($password, $passwordhash);
+    $passtosave = password_encrypt($_POST['password'], $passwordhash);
+    die(var_dump($passtosave));
 } else {
     return $error10;
 }
