@@ -9,7 +9,7 @@ function firstvisit() {
 }
 //firstvisit();
 function createUniqueKeywordId() {
-    $baseid = rand(5, 10);
+    $baseid = rand(9999, 9999999999);
     $length = strlen((string)$baseid);
     echo $length;
 }
