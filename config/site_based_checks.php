@@ -10,7 +10,7 @@ function firstvisit() {
 //firstvisit();
 function createUniqueKeywordId() {
     $baseid = rand(5, 10);
-    $length = streln((string)$baseid);
+    $length = strlen((string)$baseid);
     echo $length;
 }
 createUniqueKeywordId();
