@@ -7,5 +7,11 @@ function firstvisit() {
         return false;
     }   
 }
-firstvisit();
+//firstvisit();
+function createUniqueKeywordId() {
+    $baseid = rand(5, 10);
+    $length = ceil(log10($baseid));
+    echo $length;
+}
+createUniqueKeywordId();
 ?>
