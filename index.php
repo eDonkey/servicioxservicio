@@ -2,6 +2,7 @@
 include("config/fbconfig.php");
 include("config/site_based_checks.php");
 firstvisit();
+session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,6 +19,15 @@ firstvisit();
         <link rel="stylesheet" href="js/lightbox/dist/css/lightbox.min.css">
     </head>
     <body>
+        <div class="logintopbar">
+<?php
+if (isset($_SESSION['id'])) {
+?>
+Bienvenido <b><?php echo $_SESSION['fullname']; ?></b> - <a href="logout.php">Salir</a> | <a href="editarperfil.php">Perfil</a>
+<?php
+}          
+?>
+        </div>
         <div id="corp-logo">
             <img src="images/logo.png" border="0" width="246px" height="123px" />
         </div>
@@ -70,7 +80,7 @@ firstvisit();
                 ----- O -----<br />
 <?php } ?>
                 Ingresar usando email<br />
-                <form method="post" action="" autocomplete="email">
+                <form method="post" action="login.php" autocomplete="email">
             <table width="100">
                 <tr>
                     <td>EMAIL:</td>
@@ -107,5 +117,6 @@ firstvisit();
                 $('#ele_id').trigger('click');
         }});
         </script>
+
     </body>
 </html>

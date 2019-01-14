@@ -1,51 +1,28 @@
 <?php
-include("config/fbconfig.php");
-include("config/mysql_adapter.php");
+include("config/mysql_connection.php");
+include("config/parameters.php");
+include("config/site_based_checks.php");
+$email = mysqli_real_escape_string($connect, $_POST['username']);
+$password = password_encrypt(mysqli_real_escape_string($connect, $_POST['password']), $passwordhash);
+$loginquery = "SELECT * FROM usuarios WHERE email='$email' AND password='$password' LIMIT 1";
+$result = mysqli_query($connect, $loginquery) or die(mysqli_error());
+$row = mysqli_num_rows($result);
+if ($row === 1) {
+    $data = mysqli_fetch_array($result);
+    if ($data['confirmed'] == "Y") {
+        if ($data['suspended'] == "N") {
+            session_start();
+            $_SESSION['id'] = $data['id'];
+            $_SESSION['fullname'] = $data['fullname'];
+            $_SESSION['email'] = $data['email'];
+            $_SESSION['kid'] = $data['keywords_id'];
+            $_SESSION['priv'] = $data['privileges'];
+            echo "<a href='index.php'>Back</a>";
+        } else {
+            header("Location: index.php?login=failed&reason=suspended");
+        }
+    } else {
+        header("Location: index.php?login=failed&reason=unverified");
+    }
+}
 ?>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Servicios x Servicios</title>
-    </head>
-    <body>
-        <script>
-          window.fbAsyncInit = function() {
-            FB.init({
-              appId      : '<?php echo $fbappid; ?>',
-              cookie     : true,
-              xfbml      : true,
-              version    : '3.2'
-            });
-
-            FB.AppEvents.logPageView();   
-
-          };
-
-          (function(d, s, id){
-             var js, fjs = d.getElementsByTagName(s)[0];
-             if (d.getElementById(id)) {return;}
-             js = d.createElement(s); js.id = id;
-             js.src = "https://connect.facebook.net/en_US/sdk.js";
-             fjs.parentNode.insertBefore(js, fjs);
-           }(document, 'script', 'facebook-jssdk'));
-            FB.getLoginStatus(function(response) {
-                statusChangeCallback(response);
-            });
-        </script>
-<?php
-$fb = new Facebook\Facebook([
-  'app_id' => '$fbappid', // Replace {app-id} with your app id
-  'app_secret' => '$fbsecret',
-  'default_graph_version' => 'v2.2',
-  ]);
-
-$helper = $fb->getRedirectLoginHelper();
-
-$permissions = ['email']; // Optional permissions
-$loginUrl = $helper->getLoginUrl('https://example.com/fb-callback.php', $permissions);
-
-echo '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!</a>';
-?>
-    </body>
-</html>
