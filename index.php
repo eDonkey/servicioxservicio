@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 include("config/fbconfig.php");
 include("config/site_based_checks.php");
 firstvisit();
@@ -20,14 +22,9 @@ session_start();
     </head>
     <body>
         <div id="logintopbar">
-<?php
-if (isset($_SESSION['id'])) {
-?>
+<?php if (isset($_SESSION['id'])) { ?>
 Bienvenido <b><?php echo $_SESSION['fullname']; ?></b> - <a href="logout.php">Salir</a> | <a href="editarperfil.php">Perfil<br /></a>
-<?php
-    var_dump($_SESSION);
-}          
-?>
+<?php } ?>
         </div>
         <div id="corp-logo">
             <img src="images/logo.png" border="0" width="246px" height="123px" />
