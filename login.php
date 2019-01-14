@@ -17,6 +17,8 @@ if ($row === 1) {
             $_SESSION['email'] = $data['email'];
             $_SESSION['kid'] = $data['keywords_id'];
             $_SESSION['priv'] = $data['privileges'];
+            $updatelogints = "UPDATE `usuarios` SET `last_login_date`=CURRENT_TIMESTAMP WHERE `id`=$_SESSION['id'] LIMIT 1";
+            mysqli_query($connect, $updatelogints) or die(mysqli_error());
             header("location: index.php");
         } else {
             header("Location: index.php?login=failed&reason=suspended");
