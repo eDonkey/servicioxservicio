@@ -23,8 +23,9 @@ session_start();
 <?php
 if (isset($_SESSION['id'])) {
 ?>
-Bienvenido <b><?php echo $_SESSION['fullname']; ?></b> - <a href="logout.php">Salir</a> | <a href="editarperfil.php">Perfil</a>
+Bienvenido <b><?php echo $_SESSION['fullname']; ?></b> - <a href="logout.php">Salir</a> | <a href="editarperfil.php">Perfil<br /></a>
 <?php
+    var_dump($_SESSION);
 }          
 ?>
         </div>
