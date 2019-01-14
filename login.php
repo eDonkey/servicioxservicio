@@ -17,7 +17,7 @@ if ($row === 1) {
             $_SESSION['email'] = $data['email'];
             $_SESSION['kid'] = $data['keywords_id'];
             $_SESSION['priv'] = $data['privileges'];
-            $id = $_SESSION['id']
+            $id = $_SESSION['id'];
             $updatelogints = "UPDATE `usuarios` SET `last_login_date`=CURRENT_TIMESTAMP WHERE `id`=$id LIMIT 1";
             //die(var_dump($updatelogints));
             mysqli_query($connect, $updatelogints) or die(mysqli_error());
