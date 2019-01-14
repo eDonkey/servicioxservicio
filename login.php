@@ -17,7 +17,7 @@ if ($row === 1) {
             $_SESSION['email'] = $data['email'];
             $_SESSION['kid'] = $data['keywords_id'];
             $_SESSION['priv'] = $data['privileges'];
-            echo "<a href='index.php'>Back</a>";
+            header("location: index.php");
         } else {
             header("Location: index.php?login=failed&reason=suspended");
         }
