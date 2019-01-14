@@ -253,7 +253,7 @@ body {
     display: block;
     resize: none;
 }
-.navbar {
+.logintopbar {
   overflow: hidden;
   background-color: #333;
   position: fixed; /* Set the navbar to fixed position */
