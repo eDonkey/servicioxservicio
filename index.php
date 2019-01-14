@@ -24,15 +24,15 @@ session_start();
 <?php
 if (isset($_GET['login'])) {
     if ($_GET['reason'] == "unverified") {
-        echo "<div id='errortopbar'><b>No se ha podido iniciar sesion porque la cuenta no esta verificada. <a href='#'>Re-Enviar email de verificacion</a></b></div>";
+        echo "<div id='errortopbar' class='errortopbar'><b>No se ha podido iniciar sesion porque la cuenta no esta verificada. <a href='#'>Re-Enviar email de verificacion</a></b></div>";
     } elseif ($_GET['reason'] == "suspended") {
-        echo "<div id='errortopbar'><b>No se ha podido iniciar sesion porque la cuenta esta suspendida. <a href='#'>Contactar al Administrador</a></b></div>";
+        echo "<div id='errortopbar' class='errortopbar'><b>No se ha podido iniciar sesion porque la cuenta esta suspendida. <a href='#'>Contactar al Administrador</a></b></div>";
     } else {
-        echo "<div id='errortopbar'><b>No se ha podido iniciar sesion. Por favor, intente nuevamente</b></div>";
+        echo "<div id='errortopbar' class='errortopbar'><b>No se ha podido iniciar sesion. Por favor, intente nuevamente</b></div>";
     }
 }        
 ?>
-        <div id="logintopbar">
+        <div id="logintopbar" class="logintopbar">
 <?php if (isset($_SESSION['id'])) { ?>
 Bienvenido <b><?php echo $_SESSION['fullname']; ?></b> - <a href="logout.php">Salir</a> | <a href="editarperfil.php">Perfil<br /></a>
 <?php } ?>
