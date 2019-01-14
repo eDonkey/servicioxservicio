@@ -5,7 +5,7 @@ include("config/site_based_checks.php");
 $email = mysqli_real_escape_string($connect, $_POST['username']);
 $password = password_encrypt($passwordhash, mysqli_real_escape_string($connect, $_POST['password']));
 $loginquery = "SELECT * FROM usuarios WHERE email='$email' AND password='$password' LIMIT 1";
-$result = mysqli_query($connect, $loginquery) or die(mysqli_error());
+$result = mysqli_query($connect, $loginquery) or die(mysqli_error($connect));
 $row = mysqli_num_rows($result);
 if ($row === 1) {
     $data = mysqli_fetch_array($result);
@@ -20,7 +20,7 @@ if ($row === 1) {
             $id = $_SESSION['id'];
             $updatelogints = "UPDATE 'usuarios' SET 'last_login_date'=CURRENT_TIMESTAMP WHERE 'id'=$id LIMIT 1";
             //die(var_dump($updatelogints));
-            mysqli_query($connect, $updatelogints) or die(mysqli_error());
+            mysqli_query($connect, $updatelogints) or die(mysqli_error($connect));
             header("location: index.php");
         } else {
             header("Location: index.php?login=failed&reason=suspended");
