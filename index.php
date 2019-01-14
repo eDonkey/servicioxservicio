@@ -19,7 +19,7 @@ session_start();
         <link rel="stylesheet" href="js/lightbox/dist/css/lightbox.min.css">
     </head>
     <body>
-        <div class="logintopbar">
+        <div id="logintopbar">
 <?php
 if (isset($_SESSION['id'])) {
 ?>
