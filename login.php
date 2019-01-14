@@ -18,6 +18,7 @@ if ($row === 1) {
             $_SESSION['kid'] = $data['keywords_id'];
             $_SESSION['priv'] = $data['privileges'];
             $updatelogints = "UPDATE `usuarios` SET `last_login_date`=CURRENT_TIMESTAMP WHERE `id`=$_SESSION['id'] LIMIT 1";
+            die(var_dump($updatelogints));
             mysqli_query($connect, $updatelogints) or die(mysqli_error());
             header("location: index.php");
         } else {
