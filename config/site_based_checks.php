@@ -10,7 +10,7 @@ function firstvisit() {
 }
 //registration functions
 function createUniqueKeywordId() {
-    $baseid = rand(9999, 9999999999);
+    $baseid = rand(9999, 999999999);
     return $baseid;
 }
 function comparepassword($pass,$confirmpass) {
@@ -26,5 +26,5 @@ function password_encrypt($pass, $hash) {
 function validationmail($to) {
     mail($to, "Probando", "EMAIL DE PRUEBA");
 }
-validationmail("kooltheoutsider@gmail.com");
+//validationmail("kooltheoutsider@gmail.com");
 ?>
