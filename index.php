@@ -9,7 +9,7 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Facebook Login JavaScript Example</title>
+        <title>Servicio X Servicio</title>
         <meta charset="UTF-8">
 <!--        <script src="js/jquery-2.1.4.min.js"></script> -->
         <script src="js/bootstrap/dist/js/bootstrap.js"></script>
