@@ -113,8 +113,12 @@ Bienvenido <b><?php echo $_SESSION['fullname']; ?></b> - <a href="logout.php">Sa
             </div>
         <div class="footer">
             <div class="footerbuttons">
+<?php if (isset($_SESSION['fullname'])) { ?>}
                 <input id="showlogin" class="loginbutton" type="button" value="INGRESAR" onclick="checkDivVisible('logincontainer', 'registercontainer', 'searchcontainer');"/>
                 <input id="showlogin" class="registerbutton" type="button" value="REGISTRARSE" onclick="checkDivVisible('registercontainer','logincontainer', 'searchcontainer');"/>
+<?php } else { ?>
+                <input id="showlogin" class="loginbutton" type="button" value="PUBLICAR" onclick="checkDivVisible('logincontainer', 'registercontainer', 'searchcontainer');"/>
+<?php } ?>
                 <input id="showlogin" class="searchbutton" type="button" value="BUSCAR" onclick="checkDivVisible('searchcontainer', 'logincontainer', 'registercontainer');"/>
             </div>
             <div class="copyright">Copyright 2019 - &copy; - <a data-title="My caption" id="ele_id" href="https://www.google.com/" data-lightbox="ele_id" rel="lightbox" title="Ayuda">Ayuda</a></div>
