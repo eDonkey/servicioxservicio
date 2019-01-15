@@ -113,7 +113,7 @@ Bienvenido <b><?php echo $_SESSION['fullname']; ?></b> - <a href="logout.php">Sa
             </div>
         <div class="footer">
             <div class="footerbuttons">
-<?php if (isset($_SESSION['fullname'])) { ?>}
+<?php if (!isset($_SESSION['fullname'])) { ?>}
                 <input id="showlogin" class="loginbutton" type="button" value="INGRESAR" onclick="checkDivVisible('logincontainer', 'registercontainer', 'searchcontainer');"/>
                 <input id="showlogin" class="registerbutton" type="button" value="REGISTRARSE" onclick="checkDivVisible('registercontainer','logincontainer', 'searchcontainer');"/>
 <?php } else { ?>
