@@ -34,7 +34,7 @@ if (isset($_GET['login'])) {
 ?>
         <div id="logintopbar" class="logintopbar">
 <?php if (isset($_SESSION['id'])) { ?>
-Bienvenido <b><?php echo $_SESSION['fullname']; ?></b> - <a href="logout.php">Salir</a> | <a href="editarperfil.php">Perfil<br /></a>
+Bienvenido <b><?php echo $_SESSION['fullname']; ?></b> - <a href="logout.php">Salir</a> | <a href="profile.php" id="ele_id" rel="lightbox" data-lightbox="lightbox" data-title="Mi perfil">Perfil</a><br />
 <?php } ?>
         </div>
         <div id="corp-logo">
