@@ -27,8 +27,8 @@ function validationmail($to) {
     mail($to, "Probando", "EMAIL DE PRUEBA");
 }
 class Developer {
-    private $parm1 = rand(0,4999);
-    private $parm2 = rand(5000,9999);
+    static parm1 = rand(0,4999);
+    static parm2 = rand(5000,9999);
     public function createApi($mail) {
         $apikey = md5($this->$parm1 . $mail . $parm2);
         return $apikey;
