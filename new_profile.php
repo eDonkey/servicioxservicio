@@ -1,3 +1,13 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+include("config/fbconfig.php");
+include("config/site_based_checks.php");
+session_start();
+if (!isset($_SESSION['fullname'])) {
+    echo "No hay perfil a mostrar, porque no se ha ingresado con ninguna cuenta";
+} else {
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,7 +26,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="profile-img">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog" alt=""/>
+                            <img src="images/<?php echo $_SESSION['avatar']; ?>" alt=""/>
                             <div class="file btn btn-lg btn-primary">
                                 Change Photo
                                 <input type="file" name="file"/>
@@ -160,3 +170,4 @@
         </div>
         </body>
 </html>
+<?php } ?>
