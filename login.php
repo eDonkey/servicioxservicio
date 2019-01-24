@@ -4,7 +4,7 @@ include("config/parameters.php");
 include("config/site_based_checks.php");
 $email = mysqli_real_escape_string($connect, $_POST['username']);
 $password = password_encrypt($passwordhash, mysqli_real_escape_string($connect, $_POST['password']));
-$loginquery = "SELECT * FROM usuarios WHERE email='$email' AND password='$password' LIMIT 1";
+$loginquery = "SELECT * FROM sxs_usuarios WHERE email='$email' AND password='$password' LIMIT 1";
 $result = mysqli_query($connect, $loginquery) or die(mysqli_error());
 $row = mysqli_num_rows($result);
 if ($row === 1) {
@@ -20,7 +20,7 @@ if ($row === 1) {
             $_SESSION['avatar'] = $data['avatar'];
             $_SESSION['developer'] = $data['developer'];
             $id = $_SESSION['id'];
-            $updatelogints = "UPDATE `usuarios` SET `last_login_date`=CURRENT_TIMESTAMP WHERE `id`=$id LIMIT 1";
+            $updatelogints = "UPDATE `sxs_usuarios` SET `last_login_date`=CURRENT_TIMESTAMP WHERE `id`=$id LIMIT 1";
             //die(var_dump($updatelogints));
             mysqli_query($connect, $updatelogints) or die(mysqli_error());
             header("location: index.php");
