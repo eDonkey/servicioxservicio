@@ -18,6 +18,7 @@ if ($row === 1) {
             $_SESSION['kid'] = $data['keywords_id'];
             $_SESSION['priv'] = $data['privileges'];
             $_SESSION['avatar'] = $data['avatar'];
+            $_SESSION['developer'] = $data['developer'];
             $id = $_SESSION['id'];
             $updatelogints = "UPDATE `usuarios` SET `last_login_date`=CURRENT_TIMESTAMP WHERE `id`=$id LIMIT 1";
             //die(var_dump($updatelogints));
