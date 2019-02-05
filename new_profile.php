@@ -18,6 +18,7 @@ if (!isset($_SESSION['fullname'])) {
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
         <link rel="stylesheet" href="css/new_profile.css">
+        <link rel="stylesheet" href="css/profile.css">
     </head>
     <body>
 
@@ -59,6 +60,10 @@ if (!isset($_SESSION['fullname'])) {
                 <div class="row">
                     <div class="col-md-4">
                         <div class="profile-work">
+                            <label class="switch">
+  <input type="checkbox" <?php if ($_SESSION['developer'] == "Y" ) { echo "checked"; }?> />
+  <span class="slider"></span>
+</label>
                         </div>
                     </div>
                     <div class="col-md-8">
@@ -66,10 +71,10 @@ if (!isset($_SESSION['fullname'])) {
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>User Id</label>
+                                                <label>EMAIL</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>Kshiti123</p>
+                                                <p><?php echo $_SESSION['email']; ?></p>
                                             </div>
                                         </div>
                                         <div class="row">
