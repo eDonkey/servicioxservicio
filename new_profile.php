@@ -29,7 +29,7 @@ if (!isset($_SESSION['fullname'])) {
                         <div class="profile-img">
                             <img src="images/<?php echo $_SESSION['avatar']; ?>" alt=""/>
                             <div class="file btn btn-lg btn-primary">
-                                Change Photo
+                                Cambiar Foto
                                 <input type="file" name="file"/>
                             </div>
                         </div>
@@ -54,7 +54,7 @@ if (!isset($_SESSION['fullname'])) {
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
+                        <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Editar Perfil"/>
                     </div>
                 </div>
                 <div class="row">
