@@ -57,6 +57,10 @@ if (!isset($_SESSION['fullname'])) {
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col-md-4">
+                        <div class="profile-work">
+                        </div>
+                    </div>
                     <div class="col-md-8">
                         <div class="tab-content profile-tab" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
