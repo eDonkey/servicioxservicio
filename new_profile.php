@@ -17,6 +17,7 @@ if (!isset($_SESSION['fullname'])) {
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/new_profile.js"></script>
 <!------ Include the above in your HEAD tag ---------->
         <link rel="stylesheet" href="css/new_profile.css">
         <link rel="stylesheet" href="css/profile.css">
@@ -65,7 +66,7 @@ if (!isset($_SESSION['fullname'])) {
   <input type="checkbox" <?php if ($_SESSION['developer'] == "Y" ) { echo "checked"; }?> />
   <span class="slider"></span>
 </label>
-                            <input type="text" id="apikey" value="CLICK PARA MOSTRAR API KEY" disabled />
+                            <input type="text" id="apikey" value="CLICK PARA MOSTRAR API KEY" onclick="showApiKey(<?php echo "asbdhbsadkhbshd"; ?>)" disabled />
                         </div>
                     </div>
                     <div class="col-md-8">
