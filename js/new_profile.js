@@ -4,7 +4,7 @@ function showApiKey(apikey) {
     console.log("DISPLAYING APIKEY");
     input.disabled="true";
     console.log("DISABLING INPUT");
-    input.value.select();
+    input.select();
     document.execCommand("copy");
     console.log("VALUE COPIED");
 //    div = document.getElementById(divid);
