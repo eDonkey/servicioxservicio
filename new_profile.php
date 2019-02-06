@@ -82,7 +82,7 @@ if (!isset($_SESSION['fullname'])) {
                                                 <label>MIEMBRO DESDE</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p><?php echo date('r', strtotime($_SESSION['user_since']); ?></p>
+                                                <p><?php echo date('r', strtotime($_SESSION['user_since'])); ?></p>
                                             </div>
                                         </div>
                                         <div class="row">
