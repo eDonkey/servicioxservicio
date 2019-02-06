@@ -13,14 +13,28 @@ if (!isset($_SESSION['fullname'])) {
 <html>
     <head>
         <title>Mi perfil</title>
-
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/new_profile.js"></script>
 <!------ Include the above in your HEAD tag ---------->
         <link rel="stylesheet" href="css/new_profile.css">
         <link rel="stylesheet" href="css/profile.css">
+        <script>
+          $(function () {
+            $('form').on('submit', function (e) {
+              e.preventDefault();
+              $.ajax({
+                type: 'post',
+                url: 'developer.php',
+                data: $('form').serialize(),
+                success: function () {
+                  alert('form was submitted');
+                }
+              });
+            });
+          });
+        </script>
     </head>
     <body>
 
@@ -63,10 +77,13 @@ if (!isset($_SESSION['fullname'])) {
                     <div class="col-md-4">
                         <div class="profile-work">
                             <label class="switch">
-  <input type="checkbox" <?php if ($_SESSION['developer'] == "Y" ) { echo "checked"; }?> />
-  <span class="slider"></span>
-</label>
-                            <input type="text" id="apikey" value="CLICK PARA MOSTRAR API KEY" onclick="showApiKey('<?php echo "asbdhbsadkhbshd"; ?>')" />
+                                <form method="post" action="developer.php">
+                                    <input type="checkbox" id="developer" <?php if ($_SESSION['developer'] == "Y" ) { echo "checked"; ?> onclick="this.form.submit()"/>
+                                </form>
+                                <span class="slider"></span>
+                                <input type="text" id="apikey" value="CLICK PARA MOSTRAR API KEY" onclick="showApiKey('<?php echo "asbdhbsadkhbshd"; ?>')" />
+                                <?php } ?>
+                            </label>     
                         </div>
                     </div>
                     <div class="col-md-8">
