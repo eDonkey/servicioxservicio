@@ -66,7 +66,7 @@ if (!isset($_SESSION['fullname'])) {
   <input type="checkbox" <?php if ($_SESSION['developer'] == "Y" ) { echo "checked"; }?> />
   <span class="slider"></span>
 </label>
-                            <input type="text" id="apikey" value="CLICK PARA MOSTRAR API KEY" onclick="showApiKey(<?php echo "asbdhbsadkhbshd"; ?>)" disabled />
+                            <input type="text" id="apikey" value="CLICK PARA MOSTRAR API KEY" onclick="showApiKey("<?php echo "asbdhbsadkhbshd"; ?>")" />
                         </div>
                     </div>
                     <div class="col-md-8">
