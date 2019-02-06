@@ -39,7 +39,8 @@ if (!isset($_SESSION['fullname'])) {
     <body>
 
 <div class="container emp-profile">
-    <div class="row">
+            <form method="post">
+                <div class="row">
                     <div class="col-md-4">
                         <div class="profile-img">
                             <img src="images/<?php echo $_SESSION['avatar']; ?>" alt=""/>
@@ -76,7 +77,7 @@ if (!isset($_SESSION['fullname'])) {
                     <div class="col-md-4">
                         <div class="profile-work">
                             <label class="switch">
-                                <form method="post" action="developer.php">
+                                <form>
                                     <input type="checkbox" id="developer" <?php if ($_SESSION['developer'] == "Y" ) { echo "checked"; ?> onclick="this.form.submit()"/>
                                 </form>
                                 <span class="slider"></span>
@@ -172,7 +173,7 @@ if (!isset($_SESSION['fullname'])) {
                         </div>
                     </div>
                 </div>
-          
+            </form>           
         </div>
         </body>
 </html>
