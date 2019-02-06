@@ -1,5 +1,6 @@
 <?php
 error_reporting(E_ALL);
+setlocale(LC_ALL,"es_ES");
 ini_set('display_errors', 1);
 include("config/fbconfig.php");
 include("config/site_based_checks.php");
