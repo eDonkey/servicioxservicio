@@ -39,8 +39,7 @@ if (!isset($_SESSION['fullname'])) {
     <body>
 
 <div class="container emp-profile">
-            <form method="post">
-                <div class="row">
+    <div class="row">
                     <div class="col-md-4">
                         <div class="profile-img">
                             <img src="images/<?php echo $_SESSION['avatar']; ?>" alt=""/>
@@ -173,7 +172,7 @@ if (!isset($_SESSION['fullname'])) {
                         </div>
                     </div>
                 </div>
-            </form>           
+          
         </div>
         </body>
 </html>
