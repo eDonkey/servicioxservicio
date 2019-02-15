@@ -31,6 +31,9 @@ session_start();
     </head>
     <body>
 <?php
+if ( $islive == false) {
+    echo "No toy live";
+} else {
 if (isset($_GET['login'])) {
     if ($_GET['reason'] == "unverified") {
         echo "<div id='errortopbar' class='errortopbar'><b>No se ha podido iniciar sesion porque la cuenta no esta verificada. <a href='#'>Re-Enviar email de verificacion</a></b></div>";
@@ -139,6 +142,6 @@ Bienvenido <b><?php echo $_SESSION['fullname']; ?></b> - <a href="logout.php">Sa
                 $('#ele_id').trigger('click');
         }});
         </script>
-
+<?php } ?>
     </body>
 </html>
