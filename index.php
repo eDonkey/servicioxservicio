@@ -32,8 +32,9 @@ session_start();
     </head>
     <body>
 <?php
-if ( $islive == false) {
-    echo "No toy live";
+if ( $islive == false) { ?>
+        <div align="center"><img src="images/mantenimiento.png" border="0" alt="Sitio en mantenimiento" /></div>
+<?php 
 } else {
 if (isset($_GET['login'])) {
     if ($_GET['reason'] == "unverified") {
