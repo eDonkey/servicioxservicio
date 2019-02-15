@@ -33,7 +33,7 @@ session_start();
     <body>
 <?php
 if ( $islive == false) { ?>
-        <div align="center"><img src="images/mantenimiento.png" border="0" alt="Sitio en mantenimiento" /></div>
+        <div align="center" id="mantenimiento" class="mantenimiento"><img src="images/mantenimiento.png" border="0" alt="Sitio en mantenimiento" /></div>
 <?php 
 } else {
 if (isset($_GET['login'])) {
