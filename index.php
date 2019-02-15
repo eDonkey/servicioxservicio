@@ -1,6 +1,7 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
+include("config/parameters.php");
 include("config/fbconfig.php");
 include("config/site_based_checks.php");
 firstvisit();
